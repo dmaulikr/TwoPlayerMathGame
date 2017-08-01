@@ -29,6 +29,7 @@
 
 
 
+
 @end
 
 @implementation ViewController
@@ -54,6 +55,7 @@
     self.playerOneLives.text = [NSString stringWithFormat:@"%ld", (long)self.player.lives];
     self.playerTwoLivesView.text = @"player2 lives";
     self.playerTwoLives.text = [NSString stringWithFormat:@"%ld", (long)self.player2.lives];
+
 }
 
 
@@ -123,6 +125,7 @@
     self.answerLabel.text = @"";
     [self.gameModel randomQuestions];
     self.questions.text = self.gameModel.question;
+    
     
     
 }
