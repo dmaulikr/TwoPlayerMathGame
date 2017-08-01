@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D1F8C391F2FE7DC00125DB7 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F8C381F2FE7DC00125DB7 /* Player.m */; };
+		4D1F8C3F1F30100000125DB7 /* GameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F8C3E1F30100000125DB7 /* GameModel.m */; };
 		4D83A8031F2FE5120086F1CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D83A8021F2FE5120086F1CC /* main.m */; };
 		4D83A8061F2FE5120086F1CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D83A8051F2FE5120086F1CC /* AppDelegate.m */; };
 		4D83A8091F2FE5120086F1CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D83A8081F2FE5120086F1CC /* ViewController.m */; };
@@ -16,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D1F8C371F2FE7DC00125DB7 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		4D1F8C381F2FE7DC00125DB7 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		4D1F8C3D1F30100000125DB7 /* GameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameModel.h; path = ../GameModel.h; sourceTree = "<group>"; };
+		4D1F8C3E1F30100000125DB7 /* GameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameModel.m; path = ../GameModel.m; sourceTree = "<group>"; };
 		4D83A7FE1F2FE5120086F1CC /* TwoPlayerMathGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoPlayerMathGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D83A8021F2FE5120086F1CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4D83A8041F2FE5120086F1CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,6 +69,10 @@
 				4D83A8071F2FE5120086F1CC /* ViewController.h */,
 				4D83A8081F2FE5120086F1CC /* ViewController.m */,
 				4D83A80A1F2FE5120086F1CC /* Main.storyboard */,
+				4D1F8C371F2FE7DC00125DB7 /* Player.h */,
+				4D1F8C381F2FE7DC00125DB7 /* Player.m */,
+				4D1F8C3D1F30100000125DB7 /* GameModel.h */,
+				4D1F8C3E1F30100000125DB7 /* GameModel.m */,
 				4D83A80D1F2FE5120086F1CC /* Assets.xcassets */,
 				4D83A80F1F2FE5120086F1CC /* LaunchScreen.storyboard */,
 				4D83A8121F2FE5120086F1CC /* Info.plist */,
@@ -150,7 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D1F8C391F2FE7DC00125DB7 /* Player.m in Sources */,
 				4D83A8091F2FE5120086F1CC /* ViewController.m in Sources */,
+				4D1F8C3F1F30100000125DB7 /* GameModel.m in Sources */,
 				4D83A8061F2FE5120086F1CC /* AppDelegate.m in Sources */,
 				4D83A8031F2FE5120086F1CC /* main.m in Sources */,
 			);
@@ -309,6 +321,7 @@
 				4D83A8171F2FE5120086F1CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
