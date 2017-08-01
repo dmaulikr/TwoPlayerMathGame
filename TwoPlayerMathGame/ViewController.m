@@ -21,6 +21,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *questions;
 @property (weak, nonatomic) IBOutlet UILabel *answerLabel;
 @property (weak, nonatomic) IBOutlet UILabel *playerOneScoreView;
+@property (weak, nonatomic) IBOutlet UILabel *playerTwoScoreView;
+@property (weak, nonatomic) IBOutlet UILabel *playerOneLivesView;
+@property (weak, nonatomic) IBOutlet UILabel *playerTwoLivesView;
+@property (weak, nonatomic) IBOutlet UILabel *playerOneLives;
+@property (weak, nonatomic) IBOutlet UILabel *playerTwoLives;
 
 
 
@@ -40,8 +45,15 @@
     self.currentPlayer = self.player;
     
     self.playerOneCurrentScore.text = [NSString stringWithFormat:@"%ld", (long)self.player.score];
+    self.playerTwoCurrentScore.text = [NSString stringWithFormat:@"%ld", (long)self.player2.score];
     self.answerLabel.text = @"";
     self.playerOneScoreView.text = @"Player1 score";
+    self.playerTwoScoreView.text = @"Player2 score";
+    
+    self.playerOneLivesView.text = @"player1 lives";
+    self.playerOneLives.text = [NSString stringWithFormat:@"%ld", (long)self.player.lives];
+    self.playerTwoLivesView.text = @"player2 lives";
+    self.playerTwoLives.text = [NSString stringWithFormat:@"%ld", (long)self.player2.lives];
 }
 
 
@@ -97,13 +109,15 @@
     
     self.playerOneCurrentScore.text = [NSString stringWithFormat:@"%ld", (long)self.player.score];
     self.playerTwoCurrentScore.text = [NSString stringWithFormat:@"%ld", (long)self.player2.score];
-    
+    self.playerOneLives.text = [NSString stringWithFormat:@"%ld", (long)self.player.lives];
+    self.playerTwoLives.text = [NSString stringWithFormat:@"%ld", (long)self.player2.lives];
     
     if (self.currentPlayer == self.player) {
         self.currentPlayer = self.player2;
     } else {
         self.currentPlayer = self.player;
     }
+    
     
     
     self.answerLabel.text = @"";
